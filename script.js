@@ -31,13 +31,9 @@ document.querySelector('.check').addEventListener('click', function () {
     if (!guess) {
         displayMessage('No number!⛔');
     } else if (guess === secretNumber) {
-        displayMessage('Correct Number!🏆');
-
-        
+        displayMessage('Correct Number!🏆');        
         displayNumber(secretNumber);
-
         colorStyle('#60b347');
-
         styleWidth('30rem');
 
         if (score > highscore) {
@@ -58,10 +54,9 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
-    displayScore(score);
-    displayMessage('Start guessing...');
+  displayScore(score);
+  displayMessage('Start guessing...');
   colorStyle('#222');
-
   styleWidth('15rem');
   displayNumber('?');
   document.querySelector('.guess').value = '';
